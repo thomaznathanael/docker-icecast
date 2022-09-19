@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  nginx:
+    image: "nginx:1.23.1-alpine"
+    networks:
+      - streaming-network
+    ports:
+      - "80:80"
+    depends_on:
+      - icecast
+  icecast:
+    build: "."
+    image: "icecast:2.4.4"
+    networks:
+      - streaming-network
+    volumes:
+      - ./config/icecast/icecast.xml:/etc/icecast.xml
+
+networks:
+  streaming-network:
+    name: streaming-network
+    driver: bridge
+    attachable: false
