@@ -11,10 +11,10 @@ RUN apk update && \
     apk upgrade && \
     apk add --no-cache icecast=2.4.4-r7
 
-# This user is already created by the package installation
+# This user is already created by the package installation.
 USER icecast
 
-#
+# Icecast default port.
 
 EXPOSE 8000
 

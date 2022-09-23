@@ -1,0 +1,2 @@
+# Ignore SSL/TLS files
+nginx/ssl
