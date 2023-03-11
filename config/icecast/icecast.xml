@@ -23,8 +23,7 @@
     <hostname>icecast2.onrender.com</hostname>
     
     <listen-socket>
-        <port>8443</port>
-        <ssl>1</ssl>
+        <port>80</port>
     </listen-socket>
     
     <http-headers>
