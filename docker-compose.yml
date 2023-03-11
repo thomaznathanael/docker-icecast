@@ -6,7 +6,7 @@ services:
     networks:
       - streaming-network
     ports:
-      - "80:80"
+      - "8000:8000"
       # Uncomment the line below in case of use SSL
       # - "443:443"
     volumes:
