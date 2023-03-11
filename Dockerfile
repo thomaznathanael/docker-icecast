@@ -16,6 +16,6 @@ USER icecast
 
 # Icecast default port.
 
-EXPOSE 80
+EXPOSE 443
 
 CMD ["icecast", "-c", "/etc/icecast.xml"]
